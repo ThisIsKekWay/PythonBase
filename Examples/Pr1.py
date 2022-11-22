@@ -22,3 +22,8 @@
 #
 # for i in range(-a, a + 1):
 #     print(i, end=' ')
+
+# Вывести первую цифру дробной части числа
+# num = float(input('Введите число '))
+#
+# print(int((num * 10) % 10))
