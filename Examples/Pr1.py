@@ -27,3 +27,4 @@
 # num = float(input('Введите число '))
 #
 # print(int((num * 10) % 10))
+
