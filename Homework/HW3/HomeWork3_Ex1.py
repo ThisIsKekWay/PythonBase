@@ -11,7 +11,12 @@ print(lst)
 
 res_lst = list()
 j = -1
-for i in range(int(len(lst) / 2 + 1)):
+if len(lst) % 2 != 0:
+    size = int(len(lst) / 2) + 1
+else:
+    size = int(len(lst) / 2)
+
+for i in range(size):
     res_lst.append(lst[i] * lst[j])
     j -= 1
 print(res_lst)
