@@ -57,7 +57,8 @@ add_ratio(lst1)
 add_ratio(lst2)
 
 add_zeroes(lst1, lst2)
-
+print(lst1)
+print(lst2)
 for i in range(0, len(lst1), 2):
     res_lst.append(int(lst1[i + 1]) + int(lst2[i + 1]))
 

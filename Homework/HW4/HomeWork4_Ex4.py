@@ -8,7 +8,7 @@ ratios = []
 res_str = ''
 
 for i in range(k + 1):
-    ratios.append('{:+}'.format(random.randint(-100, +100)))
+    ratios.append('{:+}'.format(random.randint(-10, +10)))
     
 
 x = 1
