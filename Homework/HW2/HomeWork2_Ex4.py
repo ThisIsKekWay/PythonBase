@@ -1,17 +1,15 @@
-f = open("file.txt")
+
 
 num = int(input('Введите число '))
-li = []
-
-for i in range(-num, num + 1):
-    li.append(i)
+li = [n for n in range(-num, num + 1)]
 
 print(li)
 
 res = 1
-for j in range(1, 4):
-    n = int(f.read(j))
-    print(f'Позиция списка из фалйа {n}')
-    res *= li[n]
+with open("file.txt", 'r') as f:
+    for j in range(1, 4):
+        n = int(f.read(j))
+        print(f'Позиция списка из файла {n}')
+        res *= li[n]
 
 print(res)
